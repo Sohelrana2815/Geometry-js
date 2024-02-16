@@ -45,8 +45,9 @@
               </div>
               <div>
                 <p class="text-2xl">
-                  Area: <span id="triangle-area"></span
-                  ><span>cm <sup>2</sup></span>
+                  Area: <span id="triangle-area"></span>0<span
+                    >cm <sup>2</sup></span
+                  >
                 </p>
               </div>
 
@@ -72,7 +73,7 @@
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
                   name=""
-                  id=""
+                  id="rectangle-width"
                   placeholder="Width"
                 />
                 <span class="mr-4 ml-2">cm</span>
@@ -80,9 +81,16 @@
                 <input
                   class="w-24 text-2xl p-2 rounded-sm"
                   type="text"
-                  placeholder="length"
+                  id="rectangle-length"
+                  placeholder="Length"
                 />
                 <span>cm</span>
+              </div>
+              <div>
+                <p class="text-2xl">
+                  Area: <span id="rectangle-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
               </div>
               <div class="card-actions justify-end">
                 <button
@@ -94,48 +102,81 @@
               </div>
             </div>
           </div>
-          <!-- Triangle card -->
+          <!--Parallelogram card  -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="images/parallelogram.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
+              <h2 class="card-title">Parallelogram</h2>
+              <p class="text-2xl">Area (A) = b X h</p>
+              <div>
+                <input
+                  class="w-24 text-2xl p-2 rounded-sm"
+                  type="text"
+                  name=""
+                  placeholder="Base"
+                  id="parallelogram-base"
+                />
+                <span class="ml-2 mr-4">cm</span>
+                <input
+                  class="w-24 text-2xl p-2 rounded-sm"
+                  type="text"
+                  name=""
+                  placeholder="Height"
+                  id="parallelogram-height"
+                />
+                <span>cm</span>
+              </div>
+              <div class="text-2xl">
+                <p class="text-2xl">
+                  Area: <span id="parallelogram-area">0</span>
+                  <span>cm<sup>2</sup></span>
+                </p>
+              </div>
+              <div class="card-actions justify-end">
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Rhombus card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img src="images/rhombus.png" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Rhombus</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
           </div>
-          <!-- Triangle card -->
+          <!-- Pentagon card -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="images/pentagon.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
+              <h2 class="card-title">Pentagon</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Buy Now</button>
               </div>
             </div>
           </div>
-          <!-- Triangle card -->
+          <!-- Ellipse card -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure>
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-              />
+              <img src="images/ellipse.png" alt="Shoes" />
             </figure>
             <div class="card-body">
-              <h2 class="card-title">Shoes!</h2>
+              <h2 class="card-title">Ellipse</h2>
               <p>If a dog chews shoes whose shoes does he choose?</p>
               <div class="card-actions justify-end">
                 <button class="btn btn-primary">Buy Now</button>
@@ -151,5 +192,6 @@
     </main>
     <script src="script/triangle-calculate.js"></script>
     <script src="script/rectangle-area.js"></script>
+    <script src="script/parallelogram-area.js"></script>
   </body>
 </html>
